@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova AI</title>
+    <meta name="description" content="Nova AI is a chatbot application that provides information about space.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <style>
+        /* Smooth scrolling for in-page links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Links for Navigation -->
+    <div class="top-links">
+        <!-- Updated to link to the About section on the same page -->
+        <a href="#about-content">About</a>
+        <a href="https://example.com" target="_blank">GitHub</a>
+    </div>
+
+    <!-- Central Display for Title and Start Button -->
+    <div class="welcome-screen">
+        <h1>Nova AI</h1>
+        <button class="goto-nova-button" onclick="goToNova()">Click To Start</button>
+    </div>
+
+    <!-- Video Display Area -->
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- About Section (newly added) -->
+    <div id="about-content" class="about-content">
+        <h1>About Nova AI</h1>
+        <p>Nova AI is a chatbot application designed to provide users with detailed information about space.</p>
+    </div>
+
+    <!-- Link to the JavaScript file -->
+    <script src="{{ url_for('static', filename='scripts/script.js') }}"></script>
+</body>
+
+</html>

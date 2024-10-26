@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova AI</title>
+    <meta name="description" content="Nova AI is a chatbot application that provides information about space.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <style>
+        /* Smooth scrolling for in-page links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Links for Navigation -->
+    <div class="top-links">
+        <!-- Updated to link to the About section on the same page -->
+        <a href="#about-content">About</a>
+        <a href="https://github.com/Ntijerina06/NovaAi" target="_blank">GitHub</a>
+    </div>
+
+    <!-- Central Display for Title and Start Button -->
+    <div class="welcome-screen">
+        <h1>Nova AI</h1>
+        <button class="goto-nova-button" onclick="goToNova()">Click To Start</button>
+    </div>
+
+    <!-- Video Display Area -->
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- About Section (newly added) -->
+    <!-- About Section (expanded for kids) -->
+    <div id="about-content" class="about-content">
+        <h1>About Nova AI</h1>
+        <p>Nova AI is your space companion, designed especially for kids who are curious about the universe!</p>
+
+        <!-- Mission Statement -->
+        <h2>Our Mission</h2>
+        <p>Nova AI was created to inspire young minds by making space exploration fun and accessible. Through personalized
+            facts and interactive chats, Nova aims to bring the wonders of the cosmos right to your fingertips.</p>
+
+        <!-- Features -->
+        <h2>Features</h2>
+        <ul>
+            <li><strong>Friendly Space Companion:</strong> Nova AI is a voice-chat AI that acts as a fun and friendly guide
+                through space, designed specifically with kids in mind.</li>
+            <li><strong>Personalized Facts:</strong> Nova tailors information to each user, offering unique and interesting
+                space facts that make learning exciting.</li>
+            <li><strong>User-Friendly Voice Chat:</strong> Using voice chat, Nova makes it easy for kids to ask questions
+                and hear answers about planets, stars, galaxies, and more—hands-free!</li>
+            <li><strong>Fun and Interactive:</strong> Nova provides an engaging experience, making science not only
+                educational but also enjoyable.</li>
+        </ul>
+
+        <!-- Who Can Use Nova AI? -->
+        <h2>Who Can Use Nova AI?</h2>
+        <p>Nova AI is perfect for kids, young explorers, and future space specialists! If you're curious about the cosmos
+            and love learning new things, Nova is here to help you discover the universe in a fun way.</p>
+
+        <!-- How to Use Nova AI -->
+        <h2>How to Get Started with Nova</h2>
+        <p>Starting with Nova AI is as easy as pressing the "Start" button. From there, Nova will guide you through a
+            journey of space facts and answer your questions. Just ask, and Nova will respond, making it a perfect way for
+            kids to learn more about space!</p>
+    </div>
+
+
+    <!-- Link to the JavaScript file -->
+    <script src="{{ url_for('static', filename='scripts/script.js') }}"></script>
+</body>
+
+</html>
